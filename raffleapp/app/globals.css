@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-[#4CA6E8] text-white font-semibold rounded-lg hover:opacity-90 transition-opacity;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-[#FFD447] text-[#222222] font-semibold rounded-lg hover:opacity-90 transition-opacity;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-[#4CA6E8] text-[#4CA6E8] font-semibold rounded-lg hover:bg-[#4CA6E8] hover:text-white transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-lg border border-gray-200 shadow-sm p-6 hover:shadow-md transition-shadow;
+  }
+
+  .heading-1 {
+    @apply text-4xl md:text-5xl font-bold text-[#222222];
+  }
+
+  .heading-2 {
+    @apply text-2xl md:text-3xl font-bold text-[#222222];
+  }
+
+  .heading-3 {
+    @apply text-xl md:text-2xl font-bold text-[#222222];
+  }
+
+  .body-text {
+    @apply text-base text-[#666666] leading-relaxed;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-text-fill-color: #222222 !important;
+}
